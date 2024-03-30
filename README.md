@@ -123,6 +123,20 @@ You cannot use this SDK with Expo: If your project already uses Expo, you will n
 
 - NOTE: You will need to download and install [Android Studio](https://developer.android.com/studio/index.html), configured as specified in [the react-native guide for Android](https://facebook.github.io/react-native/docs/getting-started.html#android-development-environment) to run on an android emulator.
 
+#### 4.0 Expo Managed Workflow
+
+This SDK supports Expo SDK 44 and higher.
+
+To configure the SDK to work in an Expo managed project, add `@onfido/react-native-sdk` to your `app.json` plugins. The SDK will not work in Expo Go. Instead, use an Expo Dev Client or the `expo run:ios` and `expo run:android` commands.
+
+```json
+{
+	"expo": {
+		"plugins": ["@onfido/react-native-sdk"],
+	}
+}
+```
+
 #### 4.1 Adding SDK dependency through npm
 
 Navigate to the root directory of your React Native project. The rest of this section (section 4) will assume you are in the root directory. Run the following command:
